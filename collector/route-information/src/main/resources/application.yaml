@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_URL:localhost:3306/bus_route_information}?allowMultiQueries=true&useSSL=false&useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:root!23$}
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    root: info
+
+data-portal:
+  service-key: data-portal-service-key
+data-dream:
+  service-key: data-dream-service-key
